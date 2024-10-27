@@ -1,5 +1,6 @@
 {
   "tasks": {
+    "start": "deno run -A src/main.ts",
     "dev": "deno run -A --watch src/main.ts"
   },
   "imports": {
@@ -10,5 +11,15 @@
     "express": "npm:express@4.21.1",
     "pino": "npm:pino@^9.5.0",
     "pino-http": "npm:pino-http@^10.3.0"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["./"],
+    "exclude": [".vscode/**/*"]
   }
 }
